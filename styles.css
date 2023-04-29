@@ -146,6 +146,7 @@ body {
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
+  background-size: cover;
 }
 .main-page nav {
   display: flex;
@@ -157,7 +158,7 @@ body {
   align-items: center;
   justify-content: left;
   width: 100%;
-  margin: 3rem;
+  margin: 2rem;
 }
 .main-page nav .logo .logo__icon {
   width: 10%;
@@ -169,20 +170,51 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem;
+  margin: 2rem;
 }
 .main-page nav .menu img {
   width: 100%;
 }
+.main-page header {
+  margin: 5rem 1rem 1rem 1rem;
+}
 .main-page header h1 {
   font-family: "Playfair Display";
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  width: 60%;
+  margin-bottom: 1rem;
 }
 .main-page header p {
   color: white;
   font-family: "Rubik";
   font-size: 1rem;
+  margin-bottom: 5rem;
+}
+.main-page section {
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.main-page section form {
+  margin: 0 1rem;
+}
+.main-page section .form-questions {
+  background-color: white;
+}
+.main-page section .form-questions label {
+  font-family: "Rubik";
+  color: #767e86;
+  font-size: 1rem;
+}
+.main-page section .form-questions input {
+  font-family: "Playfair Display";
+  font-size: 1rem;
+}
+.main-page section .form-button {
+  background-color: rgb(255, 119, 87);
+}
+.main-page section .form-button button {
+  font-family: "Playfair Display";
 }
 
 /*# sourceMappingURL=styles.css.map */
