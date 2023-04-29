@@ -193,6 +193,7 @@ body {
 }
 .main-page section {
   width: 100%;
+  height: 100%;
   padding-bottom: 5rem;
 }
 .main-page section form {
@@ -200,6 +201,8 @@ body {
 }
 .main-page section .form-questions {
   background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .main-page section .form-questions label {
   font-family: "Rubik";
@@ -207,14 +210,38 @@ body {
   font-size: 1rem;
 }
 .main-page section .form-questions input {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
   font-family: "Playfair Display";
   font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 .main-page section .form-button {
   background-color: rgb(255, 119, 87);
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
 }
 .main-page section .form-button button {
+  align-self: center;
   font-family: "Playfair Display";
+  font-size: 2rem;
+  border: none;
+  background-color: rgb(255, 119, 87);
+  color: white;
+  padding-left: 1.5rem;
+  height: 75%;
+}
+.main-page section .form-button div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-page section .form-button div img {
+  width: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
