@@ -31,11 +31,27 @@
 .pictures {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
+  gap: 2rem;
+  width: 100%;
 }
 
 .image-berlin {
-  text-align: center;
   border-radius: 16px;
+  display: flex;
+}
+
+.image-london {
+  border-radius: 16px;
+  display: flex;
+}
+
+.image-venice {
+  border-radius: 16px;
+  display: flex;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
-  grid gap .image-berlin
 }
