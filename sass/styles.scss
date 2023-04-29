@@ -3,20 +3,39 @@
 @import "responsive";
 
 .second-page {
+  header {
+    padding: 20px;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .destinations {
+    justify-content: space-between;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: #172432;
+    width: 100%;
+  }
+
+  .description-travel {
+    text-align: start;
+    font-family: "rubik";
+    font-size: 20px;
+    width: 100%;
+    padding: 2%;
+  }
 }
 
-.destinations {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: Playfair Display;
+.pictures {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
 }
 
 .image-berlin {
-  display: grid;
+  text-align: center;
   border-radius: 16px;
-  width: 288px;
-  height: 320px;
-  padding: 40px, 20px, 40px, 20px;
+  width: 100%;
+  grid gap .image-berlin
 }
