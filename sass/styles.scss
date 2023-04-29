@@ -1,3 +1,22 @@
 @use "reset";
 @use "global";
 @import "responsive";
+
+.second-page {
+}
+
+.destinations {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Playfair Display;
+}
+
+.image-berlin {
+  display: grid;
+  border-radius: 16px;
+  width: 288px;
+  height: 320px;
+  padding: 40px, 20px, 40px, 20px;
+}
