@@ -1,3 +1,49 @@
 @use "reset";
 @use "global";
 @import "responsive";
+
+.main-page {
+  background: url(./images/hallstatt-g5751a4938_1280.jpg);
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 100%;
+      margin: 3rem;
+      .logo__icon {
+        width: 10%;
+      }
+      .logo__text {
+        width: 50%;
+      }
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  header {
+    h1 {
+      font-family: "Playfair Display";
+      color: white;
+      font-size: 3rem;
+    }
+
+    p {
+      color: white;
+      font-family: "Rubik";
+      font-size: 1rem;
+    }
+  }
+}

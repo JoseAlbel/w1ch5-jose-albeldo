@@ -143,4 +143,46 @@ body {
   min-width: 320px;
 }
 
+.main-page {
+  background: url(./images/hallstatt-g5751a4938_1280.jpg);
+  width: 100%;
+}
+.main-page nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-page nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  margin: 3rem;
+}
+.main-page nav .logo .logo__icon {
+  width: 10%;
+}
+.main-page nav .logo .logo__text {
+  width: 50%;
+}
+.main-page nav .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem;
+}
+.main-page nav .menu img {
+  width: 100%;
+}
+.main-page header h1 {
+  font-family: "Playfair Display";
+  color: white;
+  font-size: 3rem;
+}
+.main-page header p {
+  color: white;
+  font-family: "Rubik";
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
