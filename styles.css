@@ -157,7 +157,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 100%;
   margin: 2rem;
 }
 .main-page nav .logo .logo__icon {
@@ -166,14 +165,69 @@ body {
 .main-page nav .logo .logo__text {
   width: 50%;
 }
+.main-page nav .nav-links {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page nav .nav-links {
+    display: block;
+    align-self: center;
+    text-align: center;
+  }
+  .main-page nav .nav-links ul {
+    display: flex;
+    align-items: center;
+  }
+  .main-page nav .nav-links ul li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .main-page nav .nav-links ul li:hover {
+    border-bottom: 2px solid rgb(255, 119, 87);
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .main-page nav .nav-links ul a {
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik";
+    font-size: 1.2rem;
+  }
+}
 .main-page nav .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
 }
+.main-page nav .menu div {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page nav .menu div {
+    display: flex;
+  }
+  .main-page nav .menu div a {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+  .main-page nav .menu div button {
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: rgb(255, 119, 87);
+    border: none;
+    border-radius: 1rem;
+  }
+}
 .main-page nav .menu img {
   width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page nav .menu img {
+    display: none;
+  }
 }
 .main-page header {
   margin: 5rem 1rem 1rem 1rem;
@@ -185,11 +239,22 @@ body {
   width: 60%;
   margin-bottom: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .main-page header h1 {
+    font-size: 4rem;
+    width: 70%;
+  }
+}
 .main-page header p {
   color: white;
   font-family: "Rubik";
   font-size: 1rem;
   margin-bottom: 5rem;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page header p {
+    font-size: 1.5rem;
+  }
 }
 .main-page section {
   width: 100%;
@@ -197,7 +262,7 @@ body {
   padding-bottom: 5rem;
 }
 .main-page section form {
-  margin: 0 1rem;
+  margin: 1rem;
 }
 .main-page section .form-questions {
   background-color: white;
