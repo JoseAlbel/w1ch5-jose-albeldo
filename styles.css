@@ -143,6 +143,56 @@ body {
   min-width: 320px;
 }
 
+.second-page header {
+  padding: 25px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.second-page .destinations {
+  justify-content: space-between;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  color: #172432;
+  width: 100%;
+  border-bottom: 1px solid chocolate;
+}
+.second-page .description-travel {
+  text-align: start;
+  font-family: "rubik";
+  font-size: 20px;
+  width: 100%;
+  padding: 4%;
+  color: #767e86;
+}
+
+.pictures {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+.image-berlin {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 75%;
+  height: auto;
+  margin: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
@@ -328,4 +378,4 @@ body {
   width: 40%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+
