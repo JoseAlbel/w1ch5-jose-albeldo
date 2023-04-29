@@ -264,10 +264,24 @@ body {
 .main-page section form {
   margin: 1rem;
 }
+@media only screen and (min-width: 1200px) {
+  .main-page section form {
+    width: 80%;
+    display: flex;
+  }
+}
 .main-page section .form-questions {
   background-color: white;
   padding: 1.5rem;
   border-radius: 1rem 1rem 0 0;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page section .form-questions {
+    display: flex;
+    gap: 3rem;
+    padding-left: 2rem;
+    border-radius: 1rem 0 0 1rem;
+  }
 }
 .main-page section .form-questions label {
   font-family: "Rubik";
@@ -289,6 +303,11 @@ body {
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 1rem 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page section .form-button {
+    border-radius: 0 1rem 1rem 0;
+  }
 }
 .main-page section .form-button button {
   align-self: center;

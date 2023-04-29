@@ -112,11 +112,21 @@
     padding-bottom: 5rem;
     form {
       margin: 1rem;
+      @include desktop {
+        width: 80%;
+        display: flex;
+      }
     }
     .form-questions {
       background-color: white;
       padding: 1.5rem;
       border-radius: 1rem 1rem 0 0;
+      @include desktop {
+        display: flex;
+        gap: 3rem;
+        padding-left: 2rem;
+        border-radius: 1rem 0 0 1rem;
+      }
       label {
         font-family: "Rubik";
         color: #767e86;
@@ -138,6 +148,9 @@
       display: flex;
       justify-content: space-between;
       border-radius: 0 0 1rem 1rem;
+      @include desktop {
+        border-radius: 0 1rem 1rem 0;
+      }
       button {
         align-self: center;
         font-family: "Playfair Display";
