@@ -4,19 +4,21 @@
 
 .second-page {
   header {
-    padding: 20px;
+    padding: 25px;
     width: 100%;
-    text-align: start;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
+    justify-content: center;
   }
   .destinations {
     justify-content: space-between;
     font-family: "Playfair Display";
-    font-size: 20px;
+    font-size: 55px;
     color: #172432;
     width: 100%;
+    border-bottom: 1px solid chocolate;
   }
 
   .description-travel {
@@ -24,7 +26,8 @@
     font-family: "rubik";
     font-size: 20px;
     width: 100%;
-    padding: 2%;
+    padding: 4%;
+    color: #767e86;
   }
 }
 
@@ -38,17 +41,33 @@
 .image-berlin {
   border-radius: 16px;
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 75%;
+  height: auto;
+  margin: 20px;
 }
 
-.image-london {
-  border-radius: 16px;
-  display: flex;
-}
+// .image-london {
+//   border-radius: 16px;
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+//   justify-content: center;
+//   width: 33%;
+//   height: auto;
+// }
 
-.image-venice {
-  border-radius: 16px;
-  display: flex;
-}
+// .image-venice {
+//   border-radius: 16px;
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+//   justify-content: center;
+//   width: 33%;
+//   height: auto;
+// }
 .button {
   display: flex;
   justify-content: space-between;
