@@ -18,46 +18,72 @@
 <body>
   <div class="main-page">
     <nav>
-      <div>
-        <img src="./images/Vector-white.png" alt="Travellian logo white">
-        <img src="./images/Travellian-white.png" alt="Travellian name white">
+      <div class="logo">
+        <img class="logo__icon" src="./images/Vector-white.png" alt="Travellian logo white">
+        <img class="logo__text" src="./images/Travellian-white.png" alt="Travellian name white">
       </div>
-      <div>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Explore</a>
+          </li>
+          <li>
+            <a href="#">Travel</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu">
         <img src="./images/Vector-menu.png" alt="White navigation menu">
+        <div>
+          <a href="#">Login</a>
+          <button>Sign Up</button>
+        </div>
       </div>
     </nav>
     <header>
-      <h1>Start your unforgettable journey with us</h1>
+      <h1>Start your unforgettable journey with us.</h1>
       <p>The best travel for your journey begins now</p>
     </header>
     <section>
       <form action="/" method="POST">
-        <label for="destination">
-          <p>
-            DESTINATION
-          </p>
-          <input type="text" id="destination">
-        </label>
-        <label for="passengers">
-          <p>
-            PASSENGERS
-          </p>
-          <input type="text" id="passengers">
-        </label>
-        <label for="checkin">
-          <p>
-            CHECK IN
-          </p>
-          <input type="text" id="checkin">
-        </label>
-        <label for="checkout">
-          <p>
-            CHECK OUT
-          </p>
-          <input type="text" id="checkout">
-        </label>
-        <div>
-          <button type="submit">BOOK NOW</button>
+        <div class="form-questions">
+          <label for="destination">
+            <p>
+              DESTINATION
+            </p>
+            <input type="text" id="destination" placeholder="Dubai">
+          </label>
+          <label for="passengers">
+            <p>
+              PASSENGERS
+            </p>
+            <input type="text" id="passengers" placeholder="2">
+          </label>
+          <label for="checkin">
+            <p>
+              CHECK IN
+            </p>
+            <input type="date" id="checkin" placeholder="Sun, 17th Sep 2020">
+          </label>
+          <label for="checkout">
+            <p>
+              CHECK OUT
+            </p>
+            <input type="date" id="checkout" placeholder="Tue, 17th Oct 2020">
+          </label>
+        </div>
+        <div class="form-button">
+          <button type="submit">Book Now</button>
+          <div><img src="images/Book-arrow.png" alt="White arrow in book button"></div>
         </div>
       </form>
     </section>
