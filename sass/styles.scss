@@ -12,56 +12,66 @@
   }
   header {
     margin-top: 5rem;
+    @include desktop {
+      .container-button {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .button-desktop {
+      display: none;
+      @include desktop {
+        display: flex;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        img {
+          padding-left: 3rem;
+          max-height: 50%;
+        }
+      }
+    }
 
     h2 {
       font-family: "Playfair Display";
-      font-size: 30px;
+      font-size: 2rem;
       color: #172432;
       padding-bottom: 1rem;
       margin-right: 2rem;
       margin-left: 2rem;
-      border-bottom: 1px solid chocolate;
+      border-bottom: 2px solid chocolate;
 
       @include desktop {
-        font-size: 84px;
+        font-size: 5rem;
+        padding-bottom: 2rem;
       }
     }
     h3 {
       font-family: "rubik";
       font-size: 1rem;
-      display: grid;
       color: #767e86;
       margin: 1rem 2rem 5rem 2rem;
       @include desktop {
-        text-align: left;
-        flex-direction: row;
+        font-size: 1.5rem;
+        margin-top: 2rem;
       }
     }
   }
 
   .pictures {
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 2rem;
     width: 100%;
     margin-left: 2rem;
     margin-right: 2rem;
     @include desktop {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      width: 100%;
     }
   }
 
   .berlin {
     border-radius: 16px;
     width: 80%;
-  }
-
-  .twocities {
-    display: none;
-    @include desktop {
-      display: flex;
-      flex-direction: row;
-    }
   }
 
   .button {
@@ -71,7 +81,7 @@
     margin: 3rem 2rem 5rem 2rem;
 
     @include desktop {
-      grid-template-columns: repeat(4, 1fr);
+      display: none;
     }
   }
 }
@@ -157,7 +167,7 @@
     }
   }
   header {
-    margin: 5rem 1rem 1rem 1rem;
+    margin: 5rem 2rem 1rem 2rem;
     h1 {
       font-family: "Playfair Display";
       color: white;
@@ -185,7 +195,7 @@
     height: 100%;
     padding-bottom: 5rem;
     form {
-      margin: 1rem;
+      margin: 2rem;
       @include desktop {
         width: 80%;
         display: flex;
