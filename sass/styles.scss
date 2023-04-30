@@ -2,80 +2,78 @@
 @use "global";
 @import "responsive";
 
-
 .second-page {
-  header {
-    padding: 25px;
-    width: 100%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  main {
+    height: 100%;
   }
-  .destinations {
-    justify-content: space-between;
+  h2 {
     font-family: "Playfair Display";
-    font-size: 55px;
+    font-size: 30px;
     color: #172432;
-    width: 100%;
+    padding: 5px;
     border-bottom: 1px solid chocolate;
+    @include desktop {
+      font-size: 84px;
+    }
+
+    h3 {
+      font-family: "rubik";
+      font-size: 12px;
+      display: grid;
+      padding: 10px;
+      color: #767e86;
+      @include desktop {
+        text-align: left;
+        flex-direction: row;
+      }
+    }
   }
 
-  .description-travel {
-    text-align: start;
-    font-family: "rubik";
-    font-size: 20px;
+  .pictures {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     width: 100%;
-    padding: 4%;
-    color: #767e86;
+    display: flex;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .berlin {
+    border-radius: 16px;
+    display: flex;
+
+    max-width: 100%;
+  }
+
+  .twocities {
+    display: none;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    .button {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
   }
 }
-
-.pictures {
-  grid-template-columns: repeat(3, 1fr);
-  display: grid;
-  gap: 2rem;
-  width: 100%;
-}
-
-.image-berlin {
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  width: 75%;
-  height: auto;
-  margin: 20px;
-}
-
-// .image-london {
-//   border-radius: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
-//   justify-content: center;
-//   width: 33%;
-//   height: auto;
-// }
-
-// .image-venice {
-//   border-radius: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
-//   justify-content: center;
-//   width: 33%;
-//   height: auto;
-// }
-.button {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-}
-
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;

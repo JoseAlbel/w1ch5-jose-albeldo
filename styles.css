@@ -143,56 +143,81 @@ body {
   min-width: 320px;
 }
 
-.second-page header {
-  padding: 25px;
+.second-page {
   width: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
 }
-.second-page .destinations {
-  justify-content: space-between;
+.second-page main {
+  height: 100%;
+}
+.second-page h2 {
   font-family: "Playfair Display";
-  font-size: 55px;
+  font-size: 30px;
   color: #172432;
-  width: 100%;
+  padding: 5px;
   border-bottom: 1px solid chocolate;
 }
-.second-page .description-travel {
-  text-align: start;
+@media only screen and (min-width: 1200px) {
+  .second-page h2 {
+    font-size: 84px;
+  }
+}
+.second-page h2 h3 {
   font-family: "rubik";
-  font-size: 20px;
-  width: 100%;
-  padding: 4%;
+  font-size: 12px;
+  display: grid;
+  padding: 10px;
   color: #767e86;
 }
-
-.pictures {
+@media only screen and (min-width: 1200px) {
+  .second-page h2 h3 {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+.second-page .pictures {
   grid-template-columns: repeat(3, 1fr);
-  display: grid;
   gap: 2rem;
   width: 100%;
+  display: flex;
 }
-
-.image-berlin {
+@media only screen and (min-width: 1200px) {
+  .second-page .pictures {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.second-page .berlin {
   border-radius: 16px;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  width: 75%;
-  height: auto;
-  margin: 20px;
+  max-width: 100%;
+}
+.second-page .twocities {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .second-page .twocities {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.second-page section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.second-page section .button {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .second-page section .button {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.button {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
@@ -378,4 +403,4 @@ body {
   width: 40%;
 }
 
-
+/*# sourceMappingURL=styles.css.map */
