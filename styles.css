@@ -151,36 +151,40 @@ body {
 .second-page main {
   height: 100%;
 }
-.second-page h2 {
+.second-page header {
+  margin-top: 5rem;
+}
+.second-page header h2 {
   font-family: "Playfair Display";
   font-size: 30px;
   color: #172432;
-  padding: 5px;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   border-bottom: 1px solid chocolate;
 }
 @media only screen and (min-width: 1200px) {
-  .second-page h2 {
+  .second-page header h2 {
     font-size: 84px;
   }
 }
-.second-page h2 h3 {
+.second-page header h3 {
   font-family: "rubik";
-  font-size: 12px;
+  font-size: 1rem;
   display: grid;
-  padding: 10px;
   color: #767e86;
+  margin: 1rem 2rem 5rem 2rem;
 }
 @media only screen and (min-width: 1200px) {
-  .second-page h2 h3 {
+  .second-page header h3 {
     text-align: left;
     flex-direction: row;
   }
 }
 .second-page .pictures {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
   width: 100%;
-  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media only screen and (min-width: 1200px) {
   .second-page .pictures {
@@ -190,8 +194,7 @@ body {
 }
 .second-page .berlin {
   border-radius: 16px;
-  display: flex;
-  max-width: 100%;
+  width: 80%;
 }
 .second-page .twocities {
   display: none;
@@ -202,18 +205,14 @@ body {
     flex-direction: row;
   }
 }
-.second-page section {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-}
-.second-page section .button {
+.second-page .button {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 3rem 2rem 5rem 2rem;
 }
 @media only screen and (min-width: 1200px) {
-  .second-page section .button {
+  .second-page .button {
     grid-template-columns: repeat(4, 1fr);
   }
 }

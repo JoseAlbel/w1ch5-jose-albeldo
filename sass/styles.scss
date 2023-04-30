@@ -10,22 +10,28 @@
   main {
     height: 100%;
   }
-  h2 {
-    font-family: "Playfair Display";
-    font-size: 30px;
-    color: #172432;
-    padding: 5px;
-    border-bottom: 1px solid chocolate;
-    @include desktop {
-      font-size: 84px;
-    }
+  header {
+    margin-top: 5rem;
 
+    h2 {
+      font-family: "Playfair Display";
+      font-size: 30px;
+      color: #172432;
+      padding-bottom: 1rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      border-bottom: 1px solid chocolate;
+
+      @include desktop {
+        font-size: 84px;
+      }
+    }
     h3 {
       font-family: "rubik";
-      font-size: 12px;
+      font-size: 1rem;
       display: grid;
-      padding: 10px;
       color: #767e86;
+      margin: 1rem 2rem 5rem 2rem;
       @include desktop {
         text-align: left;
         flex-direction: row;
@@ -34,11 +40,11 @@
   }
 
   .pictures {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap: 2rem;
     width: 100%;
-    display: flex;
-
+    margin-left: 2rem;
+    margin-right: 2rem;
     @include desktop {
       display: flex;
       flex-direction: row;
@@ -47,9 +53,7 @@
 
   .berlin {
     border-radius: 16px;
-    display: flex;
-
-    max-width: 100%;
+    width: 80%;
   }
 
   .twocities {
@@ -59,21 +63,19 @@
       flex-direction: row;
     }
   }
-  section {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
 
-    .button {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      @include desktop {
-        grid-template-columns: repeat(4, 1fr);
-      }
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 3rem 2rem 5rem 2rem;
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
+
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
