@@ -192,7 +192,8 @@ body {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  
+}
+
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
@@ -378,4 +379,4 @@ body {
   width: 40%;
 }
 
-
+/*# sourceMappingURL=styles.css.map */
