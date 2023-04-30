@@ -346,11 +346,13 @@ body {
 }
 .main-page section form {
   margin: 2rem;
+  max-width: 20rem;
 }
 @media only screen and (min-width: 1200px) {
   .main-page section form {
     width: 80%;
     display: flex;
+    max-width: 100%;
   }
 }
 .main-page section .form-questions {
@@ -382,7 +384,7 @@ body {
 }
 .main-page section .form-button {
   background-color: rgb(255, 119, 87);
-  height: 7rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 1rem 1rem;
@@ -390,6 +392,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .main-page section .form-button {
     border-radius: 0 1rem 1rem 0;
+    padding: 0;
   }
 }
 .main-page section .form-button button {
@@ -402,6 +405,12 @@ body {
   padding-left: 1.5rem;
   height: 75%;
 }
+@media only screen and (min-width: 1200px) {
+  .main-page section .form-button button {
+    padding: 1rem;
+    margin-right: 0;
+  }
+}
 .main-page section .form-button div {
   display: flex;
   flex-direction: column;
@@ -409,6 +418,11 @@ body {
 }
 .main-page section .form-button div img {
   width: 40%;
+}
+@media only screen and (min-width: 1200px) {
+  .main-page section .form-button div {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

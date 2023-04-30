@@ -191,9 +191,11 @@
     padding-bottom: 5rem;
     form {
       margin: 2rem;
+      max-width: 20rem;
       @include desktop {
         width: 80%;
         display: flex;
+        max-width: 100%;
       }
     }
     .form-questions {
@@ -223,12 +225,13 @@
     }
     .form-button {
       background-color: rgb(255, 119, 87);
-      height: 7rem;
+      padding: 2rem 0;
       display: flex;
       justify-content: space-between;
       border-radius: 0 0 1rem 1rem;
       @include desktop {
         border-radius: 0 1rem 1rem 0;
+        padding: 0;
       }
       button {
         align-self: center;
@@ -239,6 +242,10 @@
         color: white;
         padding-left: 1.5rem;
         height: 75%;
+        @include desktop {
+          padding: 1rem;
+          margin-right: 0;
+        }
       }
       div {
         display: flex;
@@ -246,6 +253,9 @@
         justify-content: center;
         img {
           width: 40%;
+        }
+        @include desktop {
+          align-items: center;
         }
       }
     }
