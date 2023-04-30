@@ -10,70 +10,82 @@
   main {
     height: 100%;
   }
-  h2 {
-    font-family: "Playfair Display";
-    font-size: 30px;
-    color: #172432;
-    padding: 5px;
-    border-bottom: 1px solid chocolate;
+  header {
+    margin-top: 5rem;
     @include desktop {
-      font-size: 84px;
+      .container-button {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .button-desktop {
+      display: none;
+      @include desktop {
+        display: flex;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        img {
+          padding-left: 3rem;
+          max-height: 50%;
+        }
+      }
     }
 
+    h2 {
+      font-family: "Playfair Display";
+      font-size: 2rem;
+      color: #172432;
+      padding-bottom: 1rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      border-bottom: 2px solid chocolate;
+
+      @include desktop {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+      }
+    }
     h3 {
       font-family: "rubik";
-      font-size: 12px;
-      display: grid;
-      padding: 10px;
+      font-size: 1rem;
       color: #767e86;
+      margin: 1rem 2rem 5rem 2rem;
       @include desktop {
-        text-align: left;
-        flex-direction: row;
+        font-size: 1.5rem;
+        margin-top: 2rem;
       }
     }
   }
 
   .pictures {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
     width: 100%;
-    display: flex;
-
+    margin-left: 2rem;
+    margin-right: 2rem;
     @include desktop {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      width: 100%;
     }
   }
 
   .berlin {
     border-radius: 16px;
+    width: 80%;
+  }
+
+  .button {
     display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 3rem 2rem 5rem 2rem;
 
-    max-width: 100%;
-  }
-
-  .twocities {
-    display: none;
     @include desktop {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  section {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-
-    .button {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      @include desktop {
-        grid-template-columns: repeat(4, 1fr);
-      }
+      display: none;
     }
   }
 }
+
 .main-page {
   background: url(./images/hallstatt-g5751a4938_1280.jpg);
   width: 100%;
@@ -155,7 +167,7 @@
     }
   }
   header {
-    margin: 5rem 1rem 1rem 1rem;
+    margin: 5rem 2rem 1rem 2rem;
     h1 {
       font-family: "Playfair Display";
       color: white;
@@ -183,7 +195,7 @@
     height: 100%;
     padding-bottom: 5rem;
     form {
-      margin: 1rem;
+      margin: 2rem;
       @include desktop {
         width: 80%;
         display: flex;
