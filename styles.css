@@ -214,10 +214,6 @@ body {
     width: 100%;
   }
 }
-.second-page .berlin {
-  border-radius: 16px;
-  width: 80%;
-}
 .second-page .button {
   display: flex;
   justify-content: space-evenly;
